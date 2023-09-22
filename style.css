@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f40000;
+    background-image: linear-gradient(to right, hsl(257, 100%, 14%), #ff0000, #0d00ff);
+    
+        background-image: linear-gradient(to right, #ff0000, #0d00ff, #000000);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        animation: my-bg-animation 15s linear infinite;
+      
+      
+      @keyframes my-bg-animation {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 100% 0;
+        }
+      }
+      
+      
+}
+
+header {
+    background-color: #ff0000;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 51, 255, 0.5);
+    animation: my-header-animation 1s linear infinite;
+  }
+  
+  @keyframes my-header-animation {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+  
+  .spiderman-images img {
+    max-width: 300px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+}
+
+
+
+  
+.spiderman-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+  
+
+  .spiderman-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f00000;
+    border: 1px solid #0015fe;
+  }
+  .spiderman-images {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make sure the container takes the full viewport height */
+    margin: 20px 0;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff0000;
+    color: #000000;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0d00ff;
+}
+
+
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in-out;
+}
+
+footer:hover {
+    opacity: 1;
+}
